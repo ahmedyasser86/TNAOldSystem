@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NS_Special_Data" Class="Employee_INFO_ConDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.NS_EMPLOYEE_INFO_Last_2024" Member="NS_EMPLOYEE_INFO_Last_2024s">
+    <Type Name="NS_EMPLOYEE_INFO_Last_2024">
+      <Column Name="EMPLOYEE_NUMBER" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EMPLOYEE_STATUS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EMAIL_ADDRESS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FULL_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ARABIC_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="POSITION" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ORGANIZATION_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DEPARTMENT_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LOCATION_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PHONES" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DATE_OF_BIRTH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SUPERVISOR_NUMBER" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SUPERVISOR_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SUPERVISOR_EMAIL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EFFECTIVE_START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EFFECTIVE_END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GRADE_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DEP_MANAGER_NUM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DEP_MANAGER_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DEP_MANAGER_MAIL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Division_MANAGER_NUM" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Division_MANAGER_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Division_MANAGER_MAIL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Division" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Department" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Section" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

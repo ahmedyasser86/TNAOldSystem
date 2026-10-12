@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFF05D8C-4BDD-4D48-8099-5AAB553B2D99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NileSugar.HrTNA.Webparts</RootNamespace>
+    <AssemblyName>NileSugar.HrTNA.Webparts</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ProjectMode>SharePointCustomization</ProjectMode>
+    <TargetOfficeVersion>19.0</TargetOfficeVersion>
+    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountManagementExtensions.cs" />
+    <Compile Include="CommonMethods.cs" />
+    <Compile Include="Employee_INFO_Con.cs" />
+    <Compile Include="Employee_INFO_Con.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_INFO_Con.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewExportUtil.cs" />
+    <Compile Include="ManagerRequests_WP\ManagerRequests_WP.ascx.cs">
+      <DependentUpon>ManagerRequests_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerRequests_WP\ManagerRequests_WP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagerRequests_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TNAdepartmentalRpt_WP\TNAdepartmentalRpt_WP.ascx.cs">
+      <DependentUpon>TNAdepartmentalRpt_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TNAdepartmentalRpt_WP\TNAdepartmentalRpt_WP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNAdepartmentalRpt_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TNAReport\TNAReport.ascx.cs">
+      <DependentUpon>TNAReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TNAReport\TNAReport.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNAReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TNASettings_WP\TNASettings_WP.ascx.cs">
+      <DependentUpon>TNASettings_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TNASettings_WP\TNASettings_WP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TNASettings_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingRequests_WP\TrainingRequests_WP.ascx.cs">
+      <DependentUpon>TrainingRequests_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingRequests_WP\TrainingRequests_WP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrainingRequests_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Update_WP\Update_WP.ascx.cs">
+      <DependentUpon>Update_WP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Update_WP\Update_WP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Update_WP.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\NileSugar.HrTNA.Webparts.wsp" />
+    <None Include="Employee_INFO_Con.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Employee_INFO_Con.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Features\TNAFeature\TNAFeature.feature">
+      <FeatureId>{f38c8668-c522-4b82-a211-6333f98be8db}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="ManagerRequests_WP\ManagerRequests_WP.webpart" />
+    <None Include="ManagerRequests_WP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fee0d7b6-b9a8-470f-a09a-a41d0cd4e8f6}</SharePointProjectItemId>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Package\Package.package">
+      <PackageId>{8ad49e70-eded-44b0-9306-2f67174b7214}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Webparts_TNAFeature\EmpCourcesReport\EmpCourcesReport.webpart" />
+    <None Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Webparts_TNAFeature\ManagerRequests_WP\ManagerRequests_WP.webpart" />
+    <None Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Webparts_TNAFeature\TrainingRequests_WP\TrainingRequests_WP.webpart" />
+    <None Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts_TNAFeature\EmpCourcesReport\EmpCourcesReport.webpart" />
+    <None Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts_TNAFeature\ManagerRequests_WP\ManagerRequests_WP.webpart" />
+    <None Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts_TNAFeature\TrainingRequests_WP\TrainingRequests_WP.webpart" />
+    <None Include="TNAdepartmentalRpt_WP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cd930d66-e3f1-4ef6-b1a9-763a1a249229}</SharePointProjectItemId>
+    </None>
+    <None Include="TNAdepartmentalRpt_WP\TNAdepartmentalRpt_WP.webpart" />
+    <None Include="TNAReport\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c722389-31b0-4c51-8504-e921f2ca5273}</SharePointProjectItemId>
+    </None>
+    <None Include="TNAReport\TNAReport.webpart" />
+    <None Include="TNASettings_WP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{212612d1-5b0f-4501-b23f-fe7b8cafb352}</SharePointProjectItemId>
+    </None>
+    <None Include="TNASettings_WP\TNASettings_WP.webpart" />
+    <None Include="TrainingRequests_WP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c218d69-b079-4c7a-9bde-79cdf6bc3759}</SharePointProjectItemId>
+    </None>
+    <None Include="TrainingRequests_WP\TrainingRequests_WP.webpart" />
+    <None Include="Update_WP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d92dcbdf-22ca-4d53-85ed-b1a1100edec2}</SharePointProjectItemId>
+    </None>
+    <None Include="Update_WP\Update_WP.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\NileSugar.HrTNA.Webparts.dll" />
+    <Content Include="bin\Debug\NileSugar.HrTNA.Webparts.pdb" />
+    <Content Include="Features\TNAFeature\TNAFeature.Template.xml">
+      <DependentUpon>TNAFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="ManagerRequests_WP\Elements.xml" />
+    <Content Include="ManagerRequests_WP\ManagerRequests_WP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ManagerRequests_WP.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="obj\Debug\NileSugar.HrTNA.Webparts.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\NileSugar.HrTNA.Webparts.csproj.PackageFileList.txt" />
+    <Content Include="obj\Debug\NileSugar.HrTNA.Webparts.dll" />
+    <Content Include="obj\Debug\NileSugar.HrTNA.Webparts.pdb" />
+    <Content Include="obj\Debug\TempPE\Employee_INFO_Con.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\TrainingRequests_WP.TrainingRequests_WP.ascx.g.cs.dll" />
+    <Content Include="obj\Release\TempPE\Employee_INFO_Con.designer.cs.dll" />
+    <Content Include="pkgobj\Debug\NileSugar.HrTNA.Webparts_TNAFeature_Feature.xml" />
+    <Content Include="pkgobj\Debug\Package_Manifest.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\manifest.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Webparts_TNAFeature\EmpCourcesReport\Elements.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Webparts_TNAFeature\Feature.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Webparts_TNAFeature\ManagerRequests_WP\Elements.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Webparts_TNAFeature\TrainingRequests_WP\Elements.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Webparts\manifest.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts.dll" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts_TNAFeature\EmpCourcesReport\Elements.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts_TNAFeature\Feature.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts_TNAFeature\ManagerRequests_WP\Elements.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Webparts\NileSugar.HrTNA.Webparts_TNAFeature\TrainingRequests_WP\Elements.xml" />
+    <Content Include="TNAdepartmentalRpt_WP\Elements.xml" />
+    <Content Include="TNAdepartmentalRpt_WP\TNAdepartmentalRpt_WP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TNAdepartmentalRpt_WP.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="TNAReport\Elements.xml" />
+    <Content Include="TNAReport\TNAReport.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TNAReport.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="TNASettings_WP\Elements.xml" />
+    <Content Include="TNASettings_WP\TNASettings_WP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TNASettings_WP.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="TrainingRequests_WP\Elements.xml" />
+    <Content Include="TrainingRequests_WP\TrainingRequests_WP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TrainingRequests_WP.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Update_WP\Elements.xml" />
+    <Content Include="Update_WP\Update_WP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Update_WP.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Employee_INFO_Con.dbml.layout">
+      <DependentUpon>Employee_INFO_Con.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

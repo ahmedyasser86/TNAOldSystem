@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="TNASettings_WP" List="113" Url="_catalogs/wp">
+    <File Path="TNASettings_WP\TNASettings_WP.webpart" Url="NileSugar.HrTNA.Webparts_TNASettings_WP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>
