@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b611dda0-7b78-43d3-80ee-f08591f10275" solutionId="b611dda0-7b78-43d3-80ee-f08591f10275" resetWebServer="false" name="NileSugar.HrTNA.Lists" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="9bec1675-4b27-4ec5-833e-34b7341fc04e" />
+  </features>
+</package>

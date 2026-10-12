@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="EmpTechnicalCoursesLst" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/EmpTechnicalCoursesLst" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01001aab5b7a92b243ac91b493226e87a19a" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{78bb0787-9d20-43e0-a8db-f0abe658bba4}" Name="EmpCode" /><FieldRef ID="{a868c688-86e3-4682-baee-a73a7b794ac5}" Name="CourseName" /><FieldRef ID="{61bdf577-cf74-4849-be9b-a83ce17ec849}" Name="ExpectedDate" /><FieldRef ID="{37955edf-c704-4001-8892-86fa93fb0c1a}" Name="Reason" /><FieldRef ID="{06338235-263c-494c-be41-68485dc3c0aa}" Name="DeptName" /><FieldRef ID="{df047098-80ed-46e6-b8a5-d1c05c8ffc62}" Name="TrainingProvider" /><FieldRef ID="{8ee8897f-f01f-4ca3-b366-64ae927d1ce2}" Name="TNAYear" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+       
+    <Field Name="EmpCode" ID="{78bb0787-9d20-43e0-a8db-f0abe658bba4}" DisplayName="EmpCode" Type="Text" /><Field Name="CourseName" ID="{a868c688-86e3-4682-baee-a73a7b794ac5}" DisplayName="CourseName" Type="Text" /><Field Name="ExpectedDate" ID="{61bdf577-cf74-4849-be9b-a83ce17ec849}" DisplayName="ExpectedDate" Type="DateTime" /><Field Name="Reason" ID="{37955edf-c704-4001-8892-86fa93fb0c1a}" DisplayName="Reason" Type="Text" /><Field Name="DeptName" ID="{06338235-263c-494c-be41-68485dc3c0aa}" DisplayName="DeptName" Type="Text" /><Field Name="TrainingProvider" ID="{df047098-80ed-46e6-b8a5-d1c05c8ffc62}" DisplayName="TrainingProvider" Type="Text" /><Field Name="TNAYear" ID="{8ee8897f-f01f-4ca3-b366-64ae927d1ce2}" DisplayName="TNAYear" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+          
+        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EmpCode" /><FieldRef Name="CourseName" /><FieldRef Name="ExpectedDate" /><FieldRef Name="Reason" /><FieldRef Name="DeptName" /><FieldRef Name="TrainingProvider" /><FieldRef Name="TNAYear" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

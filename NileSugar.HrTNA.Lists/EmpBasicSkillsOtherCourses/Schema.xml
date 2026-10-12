@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="EmpBasicSkillsOtherCourses" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/EmpBasicSkillsOtherCourses" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100982c8013796348f2b28a07effb298cbc" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{cb222469-87e8-46da-b787-28696cf5359e}" Name="EmpCode" /><FieldRef ID="{8894b705-b986-452c-9671-efd339055605}" Name="CourseName" /><FieldRef ID="{5f9a5337-0016-458e-946c-31c6d726f4ac}" Name="ExpectedDate" /><FieldRef ID="{5bd60a56-c5b0-4fae-8c68-d07cfe5ce556}" Name="Reason" /><FieldRef ID="{733bfc3e-2123-4338-86de-b0ae8c8bc0ce}" Name="Department1" /><FieldRef ID="{9cda7362-f821-4b20-8f43-dca078d01b88}" Name="TNAYear" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+       
+    <Field Name="EmpCode" ID="{cb222469-87e8-46da-b787-28696cf5359e}" DisplayName="EmpCode" Type="Text" /><Field Name="CourseName" ID="{8894b705-b986-452c-9671-efd339055605}" DisplayName="CourseName" Type="Text" /><Field Name="ExpectedDate" ID="{5f9a5337-0016-458e-946c-31c6d726f4ac}" DisplayName="ExpectedDate" Type="DateTime" /><Field Name="Reason" ID="{5bd60a56-c5b0-4fae-8c68-d07cfe5ce556}" DisplayName="Reason" Type="Note" /><Field Name="Department1" ID="{733bfc3e-2123-4338-86de-b0ae8c8bc0ce}" DisplayName="Department" Type="Text" /><Field Name="TNAYear" ID="{9cda7362-f821-4b20-8f43-dca078d01b88}" DisplayName="TNAYear" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+          
+        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EmpCode" /><FieldRef Name="CourseName" /><FieldRef Name="ExpectedDate" /><FieldRef Name="Reason" /><FieldRef Name="Department1" /><FieldRef Name="TNAYear" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

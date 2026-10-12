@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="EmpCourses" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/EmpCourses" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100dcaafdbec3c042d5be167f89539e0681" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{19808a8f-a8a8-4e4d-a099-674722117307}" Name="EmpCode" /><FieldRef ID="{ea488cd9-848d-45fc-b685-f3b4a8d0ebb3}" Name="EmpName" /><FieldRef ID="{c967cda4-9a42-4a1f-a3e0-316799ee0ff2}" Name="Position" /><FieldRef ID="{ec9a1fb2-679d-4c6b-adff-17daaf47f568}" Name="Division" /><FieldRef ID="{0fa094cf-4816-4e77-99a2-3464a24f6188}" Name="Department1" /><FieldRef ID="{3a75610c-08a8-4230-abd9-105794c2554a}" Name="Section" /><FieldRef ID="{7dc4c040-3c0f-4cde-a9b1-1ab492e7f617}" Name="BS_x005f_EngC_x005f_Name" /><FieldRef ID="{a20c3ab0-a571-4048-9d11-fde6e0e02172}" Name="BS_x005f_EngC_x005f_ExpectedDate" /><FieldRef ID="{156205bf-1d07-4da3-bda5-ab9e83d0201b}" Name="BS_x005f_EngC_x005f_Reason" /><FieldRef ID="{5ac60a5f-fb15-4217-a15e-4facad262631}" Name="BS_x005f_CompSkillsC_x005f_Name" /><FieldRef ID="{5de4ac40-ca9d-4b2d-8034-c2f7004994ac}" Name="BS_x005f_CompSkillsC_x005f_ExpectedDate" /><FieldRef ID="{b28e9a2e-be2d-460a-9242-43c9e915b200}" Name="BS_x005f_CompSkillsC_x005f_Reason" /><FieldRef ID="{68316a25-687b-4005-966f-38df3131a334}" Name="BS_x005f_BEPC_x005f_Name" /><FieldRef ID="{00f03d23-51bd-4a7a-9632-037417b7bd62}" Name="BS_x005f_BEPC_x005f_Reason" /><FieldRef ID="{12efb626-b86d-4251-9f6b-1957246f5b30}" Name="DevS_x005f_CommSC_x005f_Name" /><FieldRef ID="{79dd225d-175b-42e6-a478-ccde04bf82ec}" Name="DevS_x005f_CommSC_x005f_ExpectedDate" /><FieldRef ID="{54a145f5-6afa-4b06-b12c-18cc4779665f}" Name="DevS_x005f_CommSC_x005f_Reason" /><FieldRef ID="{c5963303-1b68-475f-ba37-bf10e48b5f49}" Name="DevS_x005f_InterPersSC_x005f_Name" /><FieldRef ID="{6ad1d827-35be-4d25-aa98-5528fa4a8516}" Name="DevS_x005f_InterPersSC_x005f_ExpectedDate" /><FieldRef ID="{0bcbad2c-a2c4-4d83-8633-0e1ef02efdc8}" Name="DevS_x005f_InterPersSC_x005f_Reason" /><FieldRef ID="{6d25be16-e2f1-4bd8-8e34-a0e2f91f2ba2}" Name="DevS_x005f_BIC_x005f_Name" /><FieldRef ID="{51b783bd-136e-4a40-985b-4eae3eb72337}" Name="DevS_x005f_BIC_x005f_ExpectedDate" /><FieldRef ID="{4df1c4f8-1c69-4710-8b8b-73d6b0b3c682}" Name="DevS_x005f_BIC_x005f_Reason" /><FieldRef ID="{9e078289-f639-4240-b492-233a337e1bdd}" Name="BS_x005f_BEPC_x005f_ExpectedDate" /><FieldRef ID="{eea1736f-1a6a-47ac-b1fc-79a098908e57}" Name="RequestStatus" /><FieldRef ID="{43da0156-6908-4b6a-9581-c8e4174c4185}" Name="MgrCode" /><FieldRef ID="{57a5a3dd-2718-440f-880b-e59946c10df4}" Name="DHCode" /><FieldRef ID="{db5d607b-6a81-45b6-8a4d-18f38a0949c1}" Name="SupervisorCode" /><FieldRef ID="{e2a6bd45-b278-45d4-a338-00c43b5cbaa0}" Name="DHUser" /><FieldRef ID="{a0fceffa-5676-4c67-a5cd-52c02029ab25}" Name="TNAYear" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+       
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="EmpCode" ID="{19808a8f-a8a8-4e4d-a099-674722117307}" DisplayName="EmpCode" Type="Text" /><Field Name="EmpName" ID="{ea488cd9-848d-45fc-b685-f3b4a8d0ebb3}" DisplayName="EmpName" Type="Text" /><Field Name="Position" ID="{c967cda4-9a42-4a1f-a3e0-316799ee0ff2}" DisplayName="Position" Type="Text" /><Field Name="Division" ID="{ec9a1fb2-679d-4c6b-adff-17daaf47f568}" DisplayName="Division" Type="Text" /><Field Name="Department1" ID="{0fa094cf-4816-4e77-99a2-3464a24f6188}" DisplayName="Department" Type="Text" /><Field Name="Section" ID="{3a75610c-08a8-4230-abd9-105794c2554a}" DisplayName="Section" Type="Text" /><Field Name="BS_x005f_EngC_x005f_Name" ID="{7dc4c040-3c0f-4cde-a9b1-1ab492e7f617}" DisplayName="BS_EngC_Name" Type="Text" /><Field Name="BS_x005f_EngC_x005f_ExpectedDate" ID="{a20c3ab0-a571-4048-9d11-fde6e0e02172}" DisplayName="BS_EngC_ExpectedDate" Type="DateTime" /><Field Name="BS_x005f_EngC_x005f_Reason" ID="{156205bf-1d07-4da3-bda5-ab9e83d0201b}" DisplayName="BS_EngC_Reason" Type="Note" /><Field Name="BS_x005f_CompSkillsC_x005f_Name" ID="{5ac60a5f-fb15-4217-a15e-4facad262631}" DisplayName="BS_CompSkillsC_Name" Type="Text" /><Field Name="BS_x005f_CompSkillsC_x005f_ExpectedDate" ID="{5de4ac40-ca9d-4b2d-8034-c2f7004994ac}" DisplayName="BS_CompSkillsC_ExpectedDate" Type="DateTime" /><Field Name="BS_x005f_CompSkillsC_x005f_Reason" ID="{b28e9a2e-be2d-460a-9242-43c9e915b200}" DisplayName="BS_CompSkillsC_Reason" Type="Note" /><Field Name="BS_x005f_BEPC_x005f_Name" ID="{68316a25-687b-4005-966f-38df3131a334}" DisplayName="BS_BEPC_Name" Type="Text" /><Field Name="BS_x005f_BEPC_x005f_Reason" ID="{00f03d23-51bd-4a7a-9632-037417b7bd62}" DisplayName="BS_BEPC_Reason" Type="Note" /><Field Name="DevS_x005f_CommSC_x005f_Name" ID="{12efb626-b86d-4251-9f6b-1957246f5b30}" DisplayName="DevS_CommSC_Name" Type="Text" /><Field Name="DevS_x005f_CommSC_x005f_ExpectedDate" ID="{79dd225d-175b-42e6-a478-ccde04bf82ec}" DisplayName="DevS_CommSC_ExpectedDate" Type="DateTime" /><Field Name="DevS_x005f_CommSC_x005f_Reason" ID="{54a145f5-6afa-4b06-b12c-18cc4779665f}" DisplayName="DevS_CommSC_Reason" Type="Note" /><Field Name="DevS_x005f_InterPersSC_x005f_Name" ID="{c5963303-1b68-475f-ba37-bf10e48b5f49}" DisplayName="DevS_InterPersSC_Name" Type="Text" /><Field Name="DevS_x005f_InterPersSC_x005f_ExpectedDate" ID="{6ad1d827-35be-4d25-aa98-5528fa4a8516}" DisplayName="DevS_InterPersSC_ExpectedDate" Type="DateTime" /><Field Name="DevS_x005f_InterPersSC_x005f_Reason" ID="{0bcbad2c-a2c4-4d83-8633-0e1ef02efdc8}" DisplayName="DevS_InterPersSC_Reason" Type="Note" /><Field Name="DevS_x005f_BIC_x005f_Name" ID="{6d25be16-e2f1-4bd8-8e34-a0e2f91f2ba2}" DisplayName="DevS_BIC_Name" Type="Text" /><Field Name="DevS_x005f_BIC_x005f_ExpectedDate" ID="{51b783bd-136e-4a40-985b-4eae3eb72337}" DisplayName="DevS_BIC_ExpectedDate" Type="DateTime" /><Field Name="DevS_x005f_BIC_x005f_Reason" ID="{4df1c4f8-1c69-4710-8b8b-73d6b0b3c682}" DisplayName="DevS_BIC_Reason" Type="Note" /><Field Name="BS_x005f_BEPC_x005f_ExpectedDate" ID="{9e078289-f639-4240-b492-233a337e1bdd}" DisplayName="BS_BEPC_ExpectedDate" Type="DateTime" /><Field Name="RequestStatus" ID="{eea1736f-1a6a-47ac-b1fc-79a098908e57}" DisplayName="RequestStatus" Type="Text" /><Field Name="MgrCode" ID="{43da0156-6908-4b6a-9581-c8e4174c4185}" DisplayName="MgrCode" Type="Text" /><Field Name="DHCode" ID="{57a5a3dd-2718-440f-880b-e59946c10df4}" DisplayName="DHCode" Type="Text" /><Field Name="SupervisorCode" ID="{db5d607b-6a81-45b6-8a4d-18f38a0949c1}" DisplayName="SupervisorCode" Type="Text" /><Field Name="DHUser" ID="{e2a6bd45-b278-45d4-a338-00c43b5cbaa0}" DisplayName="DHUser" Type="Text" /><Field Name="TNAYear" ID="{a0fceffa-5676-4c67-a5cd-52c02029ab25}" DisplayName="TNAYear" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+          
+        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EmpCode" /><FieldRef Name="EmpName" /><FieldRef Name="Position" /><FieldRef Name="Division" /><FieldRef Name="Department1" /><FieldRef Name="Section" /><FieldRef Name="BS_x005f_EngC_x005f_Name" /><FieldRef Name="BS_x005f_EngC_x005f_ExpectedDate" /><FieldRef Name="BS_x005f_EngC_x005f_Reason" /><FieldRef Name="BS_x005f_CompSkillsC_x005f_Name" /><FieldRef Name="BS_x005f_CompSkillsC_x005f_ExpectedDate" /><FieldRef Name="BS_x005f_CompSkillsC_x005f_Reason" /><FieldRef Name="BS_x005f_BEPC_x005f_Name" /><FieldRef Name="BS_x005f_BEPC_x005f_Reason" /><FieldRef Name="DevS_x005f_CommSC_x005f_Name" /><FieldRef Name="DevS_x005f_CommSC_x005f_ExpectedDate" /><FieldRef Name="DevS_x005f_CommSC_x005f_Reason" /><FieldRef Name="DevS_x005f_InterPersSC_x005f_Name" /><FieldRef Name="DevS_x005f_InterPersSC_x005f_ExpectedDate" /><FieldRef Name="DevS_x005f_InterPersSC_x005f_Reason" /><FieldRef Name="DevS_x005f_BIC_x005f_Name" /><FieldRef Name="DevS_x005f_BIC_x005f_ExpectedDate" /><FieldRef Name="DevS_x005f_BIC_x005f_Reason" /><FieldRef Name="BS_x005f_BEPC_x005f_ExpectedDate" /><FieldRef Name="RequestStatus" /><FieldRef Name="MgrCode" /><FieldRef Name="DHCode" /><FieldRef Name="SupervisorCode" /><FieldRef Name="DHUser" /><FieldRef Name="TNAYear" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

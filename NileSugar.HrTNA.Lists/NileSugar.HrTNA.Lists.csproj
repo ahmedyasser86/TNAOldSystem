@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00149991-B854-4524-9F99-1D6F9C3BB6AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NileSugar.HrTNA.Lists</RootNamespace>
+    <AssemblyName>NileSugar.HrTNA.Lists</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicSkillsOtherCourses\BasicSkillsOtherCoursesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5201c8f7-78c3-4681-9a7b-f6934643c65b}</SharePointProjectItemId>
+    </None>
+    <None Include="BasicSkillsOtherCourses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0a7dc1a1-45ae-4a2e-ac03-074f57471fa8}</SharePointProjectItemId>
+    </None>
+    <None Include="bin\Debug\NileSugar.HrTNA.Lists.wsp" />
+    <None Include="DevSkillsOtherCourses\DevSkillsOtherCoursesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{66479e81-5b81-4573-83cf-04ca6ab0e8eb}</SharePointProjectItemId>
+    </None>
+    <None Include="DevSkillsOtherCourses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d91af03b-8c6a-4c32-8538-17e4ca09e1d8}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpBasicSkillsOtherCourses\EmpBasicSkillsOtherCoursesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9b325ba4-e9af-471a-b83a-c59ef5520393}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpBasicSkillsOtherCourses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eace255f-d439-483b-8349-55a712aa6dd2}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpCourses\EmpCoursesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d661d069-cbd4-4aec-a687-1d40fd34414d}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpCourses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d80c65a-6e4c-4a8f-8a3b-b802ab1f4170}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpDevSkillsOtherCourses\EmpDevSkillsOtherCoursesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d64a6833-b081-424a-beae-fe6bb181eaf4}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpDevSkillsOtherCourses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c1d3fd5b-0ed1-4133-9614-e1b9e5e3a3f6}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpTechnicalCoursesLst\EmpTechnicalCoursesLstInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{882c3708-fe2e-4171-8c02-39ac63333279}</SharePointProjectItemId>
+    </None>
+    <None Include="EmpTechnicalCoursesLst\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb5f853f-1938-4da1-a647-76e130f6c324}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9bec1675-4b27-4ec5-833e-34b7341fc04e}</FeatureId>
+    </None>
+    <None Include="GeneralCoursesLst\GeneralCoursesLstInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8ae698a9-1528-4e26-a669-3f94ccb1146a}</SharePointProjectItemId>
+    </None>
+    <None Include="GeneralCoursesLst\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cbf592bc-07ba-47cb-91b8-70295c9bb48e}</SharePointProjectItemId>
+    </None>
+    <None Include="HrTNAMailsTemplates\HrTNAMailsTemplatesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb64909e-20ca-4e55-8946-4aeeb82e701a}</SharePointProjectItemId>
+    </None>
+    <None Include="HrTNAMailsTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8b9e19f3-6efd-4379-9f69-5e2e24264d4e}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="LookupsLst\LookupsLstInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{313b5def-afc9-4d67-a16b-a8639e29aa2e}</SharePointProjectItemId>
+    </None>
+    <None Include="LookupsLst\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9819f2a4-4e17-478c-9ba5-add1c6d520f1}</SharePointProjectItemId>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Package\Package.package">
+      <PackageId>{b611dda0-7b78-43d3-80ee-f08591f10275}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="TechnicalCoursesLst\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dcb59fcf-94dc-4d28-85ff-36b568cb5aca}</SharePointProjectItemId>
+    </None>
+    <None Include="TechnicalCoursesLst\TechnicalCoursesLstInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a1843361-5a38-444c-8417-86f1e70458c3}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BasicSkillsOtherCourses\BasicSkillsOtherCoursesInstance\Elements.xml" />
+    <Content Include="BasicSkillsOtherCourses\Elements.xml" />
+    <Content Include="BasicSkillsOtherCourses\Schema.xml" />
+    <Content Include="bin\Debug\NileSugar.HrTNA.Lists.dll" />
+    <Content Include="bin\Debug\NileSugar.HrTNA.Lists.pdb" />
+    <Content Include="DevSkillsOtherCourses\DevSkillsOtherCoursesInstance\Elements.xml" />
+    <Content Include="DevSkillsOtherCourses\Elements.xml" />
+    <Content Include="DevSkillsOtherCourses\Schema.xml" />
+    <Content Include="EmpBasicSkillsOtherCourses\Elements.xml" />
+    <Content Include="EmpBasicSkillsOtherCourses\EmpBasicSkillsOtherCoursesInstance\Elements.xml" />
+    <Content Include="EmpBasicSkillsOtherCourses\Schema.xml" />
+    <Content Include="EmpCourses\Elements.xml" />
+    <Content Include="EmpCourses\EmpCoursesInstance\Elements.xml" />
+    <Content Include="EmpCourses\Schema.xml" />
+    <Content Include="EmpDevSkillsOtherCourses\Elements.xml" />
+    <Content Include="EmpDevSkillsOtherCourses\EmpDevSkillsOtherCoursesInstance\Elements.xml" />
+    <Content Include="EmpDevSkillsOtherCourses\Schema.xml" />
+    <Content Include="EmpTechnicalCoursesLst\Elements.xml" />
+    <Content Include="EmpTechnicalCoursesLst\EmpTechnicalCoursesLstInstance\Elements.xml" />
+    <Content Include="EmpTechnicalCoursesLst\Schema.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="GeneralCoursesLst\Elements.xml" />
+    <Content Include="GeneralCoursesLst\GeneralCoursesLstInstance\Elements.xml" />
+    <Content Include="GeneralCoursesLst\Schema.xml" />
+    <Content Include="HrTNAMailsTemplates\Elements.xml" />
+    <Content Include="HrTNAMailsTemplates\HrTNAMailsTemplatesInstance\Elements.xml" />
+    <Content Include="HrTNAMailsTemplates\Schema.xml" />
+    <Content Include="LookupsLst\Elements.xml" />
+    <Content Include="LookupsLst\LookupsLstInstance\Elements.xml" />
+    <Content Include="LookupsLst\Schema.xml" />
+    <Content Include="obj\Debug\NileSugar.HrTNA.Lists.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\NileSugar.HrTNA.Lists.csproj.PackageFileList.txt" />
+    <Content Include="obj\Debug\NileSugar.HrTNA.Lists.dll" />
+    <Content Include="obj\Debug\NileSugar.HrTNA.Lists.pdb" />
+    <Content Include="pkgobj\Debug\NileSugar.HrTNA.Lists_Feature1_Feature.xml" />
+    <Content Include="pkgobj\Debug\Package_Manifest.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\manifest.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Lists_Feature1\EmpCoursesInstance\Elements.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Lists_Feature1\EmpCourses\Elements.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Lists_Feature1\EmpCourses\Schema.xml" />
+    <Content Include="pkgobj\Debug\TokenReplaceFolder\NileSugar.HrTNA.Lists_Feature1\Feature.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Lists\manifest.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Lists\NileSugar.HrTNA.Lists.dll" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Lists\NileSugar.HrTNA.Lists_Feature1\EmpCoursesInstance\Elements.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Lists\NileSugar.HrTNA.Lists_Feature1\EmpCourses\Elements.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Lists\NileSugar.HrTNA.Lists_Feature1\EmpCourses\Schema.xml" />
+    <Content Include="pkg\Debug\NileSugar.HrTNA.Lists\NileSugar.HrTNA.Lists_Feature1\Feature.xml" />
+    <Content Include="TechnicalCoursesLst\Elements.xml" />
+    <Content Include="TechnicalCoursesLst\Schema.xml" />
+    <Content Include="TechnicalCoursesLst\TechnicalCoursesLstInstance\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
